@@ -1,8 +1,10 @@
 body {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: "green green green""yello red blue""orange orange blue";
+    grid-template-areas: "green green green"
+        "yellow red blue"
+        "orange orange blue"
 }
 
 #green {
@@ -11,17 +13,22 @@ body {
 
 #yellow {
     grid-area: yellow;
+
+}
+
+#red {
+    grid-area: red;
+}
+
+#blue {
+    grid-area: blue;
+}
+
+#orange {
+    grid-area: orange;
 }
 
 ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-#orange {
-    display: orange;
-}
-
-#red {
-    display: red;
 }
